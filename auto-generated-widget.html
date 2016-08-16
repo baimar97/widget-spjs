@@ -1880,8 +1880,8 @@ chilipeppr.publish("/com-chilipeppr-widget-serialport/send", "G1 X10 F500\\n");
         },
         queueMax: {}, // stores max vals we've seen
         queueEls: {}, // stores dom elements so don't have to look up each time
-        sendPauseAt: 20000, // we will ask the Gcode widget to pause send if our buffer gets this high
-        sendResumeAt: 15000, // we will send resume when buffer gets back here
+        sendPauseAt: 1000, // we will ask the Gcode widget to pause send if our buffer gets this high
+        sendResumeAt: 500, // we will send resume when buffer gets back here
         isPlannerPaused: false,
         onUpdateQueueCnt: function(data) {
             // we'll get json like this so we know our buffer state in spjs
